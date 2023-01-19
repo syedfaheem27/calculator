@@ -12,3 +12,5 @@ const add=document.querySelector('.add');
 const subtract=document.querySelector('.subtract');
 const multiply=document.querySelector('.multiply');
 const divide=document.querySelector('.divide');
+
+let cl_flag,operand='',disp='',n1,n2,n3,decimal_count=0,equal_count=1;
