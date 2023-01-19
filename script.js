@@ -118,6 +118,27 @@ function sum() {
 subtract.addEventListener('click',()=>{
     equal_count=1;
     switch(op) {
+        case '+':
+            cl_flag='-p';           
+            op='-';
+            decimal_count=0;
+            sum();
+            break;
+
+        case '*':
+            cl_flag='-p';           
+            op='-';
+            decimal_count=0;
+            product();
+            break;
+
+        case '/':
+            cl_flag='-p';           
+            op='-';
+            decimal_count=0;
+            qoutient();
+            break;
+
         default:
             cl_flag='-p';            //-p- pressed a - operator and not anything afterwards
             op='-';
