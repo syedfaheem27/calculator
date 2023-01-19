@@ -23,3 +23,14 @@ let cl_flag,operand='',disp='',n1,n2,n3,decimal_count=0,equal_count=1;
 //decimal_count ensures that a decimal button responds only once when pressed simultaneously.
 //equal_count ensures the calculator displays a new set of number if we press any number right after pressing the equal_to button.
 
+num_list.forEach((num)=> {
+    num.addEventListener('click',(e)=> {
+        if(!op||(op && equal_count=='s')){
+            cl_flag='i';
+            disp+=e.target.textContent;
+            screen.textContent=disp;
+            n1=Number(disp);
+            n2=0;
+            n3=1;
+        }
+    })})
