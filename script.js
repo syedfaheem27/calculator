@@ -302,3 +302,77 @@ sign_change.addEventListener('click', ()=> {
         screen.textContent=n3;
     }
 })
+
+
+//clear
+clear.addEventListener('click',()=> {
+    if(!screen.textContent) return;
+    else if(cl_flag=='i'){
+        let arr=disp.split('');
+        let n=arr.pop();
+        if(n=='.'){
+            decimal_count=0;
+        }
+        disp=arr.join('');
+        screen.textContent=disp;
+        n1=Number(disp);
+    }
+    else if(cl_flag=='+p'||cl_flag=='-p'||cl_flag=='*p'||cl_flag=='/p') return ;
+    else if(cl_flag=='+wp'||cl_flag=='-wp'){
+        let arr=disp.split('');
+        let n=arr.pop();
+        if(n=='.'){
+            decimal_count=0;
+        }
+        disp=arr.join('');
+        screen.textContent=disp;
+        n2=Number(disp);
+    }
+    else if(cl_flag=='*wp'||cl_flag=='/wp'){
+        let arr=disp.split('');
+        let n=arr.pop();
+        if(n=='.'){
+            decimal_count=0;
+        }
+        disp=arr.join('');
+        screen.textContent=disp;
+        n3=Number(disp);
+    }
+})
+
+
+//clear-button
+clear.addEventListener('click',()=> {
+    if(!screen.textContent) return;
+    else if(cl_flag=='i'){
+        let arr=disp.split('');
+        let n=arr.pop();
+        if(n=='.'){
+            decimal_count=0;
+        }
+        disp=arr.join('');
+        screen.textContent=disp;
+        n1=Number(disp);
+    }
+    else if(cl_flag=='+p'||cl_flag=='-p'||cl_flag=='*p'||cl_flag=='/p') return ;
+    else if(cl_flag=='+wp'||cl_flag=='-wp'){
+        let arr=disp.split('');
+        let n=arr.pop();
+        if(n=='.'){
+            decimal_count=0;
+        }
+        disp=arr.join('');
+        screen.textContent=disp;
+        n2=Number(disp);
+    }
+    else if(cl_flag=='*wp'||cl_flag=='/wp'){
+        let arr=disp.split('');
+        let n=arr.pop();
+        if(n=='.'){
+            decimal_count=0;
+        }
+        disp=arr.join('');
+        screen.textContent=disp;
+        n3=Number(disp);
+    }
+})
