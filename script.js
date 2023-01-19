@@ -13,7 +13,7 @@ const subtract=document.querySelector('.subtract');
 const multiply=document.querySelector('.multiply');
 const divide=document.querySelector('.divide');
 
-let cl_flag,operand='',disp='',n1,n2,n3,decimal_count=0,equal_count=1;
+let cl_flag,op='',disp='',n1,n2,n3,decimal_count=0,equal_count=1;
 
 //op-denotes the operator pressed
 //n1- used to store the first operand in case of all operators.
