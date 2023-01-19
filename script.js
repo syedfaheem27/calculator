@@ -34,3 +34,25 @@ num_list.forEach((num)=> {
             n3=1;
         }
     })})
+
+//The add operator
+add.addEventListener('click',()=> {
+    equal_count=1;
+    switch(op) {
+        default:
+            cl_flag='+p';            //+p-pressed a + operator and not anything afterwards
+            op='+';
+            decimal_count=0;
+            sum();
+        }
+    })
+
+function sum() {
+        n1+=n2;
+        n1=Math.floor(n1*1000)/1000;
+        screen.textContent=n1;
+        n2=0;
+        n3=1;
+        disp='';
+     }
+    
