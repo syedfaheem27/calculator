@@ -33,7 +33,44 @@ num_list.forEach((num)=> {
             n2=0;
             n3=1;
         }
-    })})
+        else {
+            if(op=='+'){
+                disp+=e.target.textContent;
+                n2=Number(disp);
+                cl_flag='+wp'            //+wp-added numbers after pressing +
+                equal_count=0;
+                screen.textContent=n2;
+                
+           
+            }
+            else if(op=='-'){
+                disp+=e.target.textContent;
+                n2=Number(disp);
+                cl_flag='-wp';          //-wp-added numbers after pressing -
+                equal_count=0;
+                screen.textContent=n2;
+                
+            }
+            else if(op=='*') {
+                disp+=e.target.textContent;
+                n3=Number(disp);
+                cl_flag='*wp';          //*wp-added numbers after pressing *
+                equal_count=0;
+                screen.textContent=n3;
+                
+            }
+            else if(op=='/') {
+                disp+=e.target.textContent;
+                n3=Number(disp);
+                cl_flag='/wp';          // /wp-added numbers after pressing /
+                equal_count=0;
+                screen.textContent=n3;
+               
+            }
+        }
+    })
+
+})
 
 //The + operator
 add.addEventListener('click',()=> {
