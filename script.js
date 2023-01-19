@@ -376,3 +376,56 @@ clear.addEventListener('click',()=> {
         n3=Number(disp);
     }
 })
+
+
+//equal_to button
+equal_to.addEventListener('click',()=> {
+    equal_count+=1;
+    if(equal_count==1){
+    if(!screen.textContent) {
+        return;
+    }
+    else if(cl_flag=='i'||cl_flag=='+p'||cl_flag=='-p'||cl_flag=='*p'||cl_flag=='/p') {
+        return;
+    }
+    else {
+        switch(cl_flag){
+            case '+wp':          
+                op='+';
+                decimal_count=0;
+                equal_count='s';            //s-start over
+                sum();
+               
+                break;
+
+            case '-wp':
+                op='-';
+                decimal_count=0;
+                equal_count='s';            //s-start over
+                difference();
+              
+                break;
+
+            case '*wp':
+                op='*';
+                decimal_count=0;
+                equal_count='s';            //s-start over
+                product();
+              
+                break;
+
+            case '/wp':
+                {
+                    op='/';
+                    decimal_count=0;
+                    equal_count='s';  
+                    qoutient();
+                break;
+        }
+    }
+}
+}
+    else return;
+})
+
+
