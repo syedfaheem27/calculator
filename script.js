@@ -246,3 +246,36 @@ function qoutient() {
     disp='';
 }
  }
+
+ //The decimal button
+ decimal.addEventListener('click', ()=>{
+    decimal_count+=1;
+    if(decimal_count==1){
+    if(!screen.textContent) {
+        decimal_count=0;
+        return;
+    }
+    else if(cl_flag=='+p'||cl_flag=='-p'||cl_flag=='*p'||cl_flag=='/p'){
+        decimal_count=0;
+        return;
+    }
+    else if(cl_flag=='i'){
+        disp+='.';
+        screen.textContent=disp;
+        n1=Number(disp);
+        n2=0;
+        n3=1;
+    }
+    else if(cl_flag=='+wp'||cl_flag=='-wp'){
+        disp+='.';
+        n2=Number(disp);
+        screen.textContent=disp;
+    }
+    else if(cl_flag=='*wp'||cl_flag=='/wp'){
+        disp+='.';
+        n3=Number(disp);
+        screen.textContent=disp;
+    }
+}
+    else return;
+})
