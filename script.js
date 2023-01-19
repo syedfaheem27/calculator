@@ -279,3 +279,26 @@ function qoutient() {
 }
     else return;
 })
+
+//sign-change button
+sign_change.addEventListener('click', ()=> {
+    if(!screen.textContent) return;
+    else if(cl_flag=='i') {
+        n1*=-1;
+        disp=n1;
+        n2=0,
+        n3=1;
+        screen.textContent=disp;
+    }
+    else if(cl_flag=='+p'||cl_flag=='-p'||cl_flag=='*p'||cl_flag=='/p') return ;
+    else if(cl_flag=='+wp'||cl_flag=='-wp'){
+        n2*=-1;
+        disp=n2;
+        screen.textContent=n2;
+    }
+    else if(cl_flag=='*wp'||cl_flag=='/wp'){
+        n3*=-1;
+        disp=n3;
+        screen.textContent=n3;
+    }
+})
