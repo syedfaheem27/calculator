@@ -35,7 +35,7 @@ num_list.forEach((num)=> {
         }
     })})
 
-//The add operator
+//The + operator
 add.addEventListener('click',()=> {
     equal_count=1;
     switch(op) {
@@ -96,4 +96,33 @@ function product() {
     n2=0;
     n3=1;
     disp='';
+ }
+
+//The / operator
+divide.addEventListener('click',()=> {
+    equal_count=1;
+    switch(op){
+
+        default: {
+            cl_flag='/p';           //  /p - pressed a / operator and not anything afterwards
+            op='/';
+            decimal_count=0;
+            qoutient();
+    }
+    }
+})
+
+function qoutient() {
+    if(n3==0) {
+        alert('Invalid operation');
+        window.location.reload();
+    }
+    else {
+    n1/=n3;
+    n1=Math.floor(n1*1000)/1000;
+    screen.textContent=n1;
+    n2=0;
+    n3=1;
+    disp='';
+}
  }
