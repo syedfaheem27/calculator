@@ -428,4 +428,7 @@ equal_to.addEventListener('click',()=> {
     else return;
 })
 
-
+// clear_all button
+clear_all.addEventListener('click',()=> {
+    window.location.reload();
+})
